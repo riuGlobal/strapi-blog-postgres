@@ -1,4 +1,4 @@
-FROM node:dubnium-buster-slim
+FROM node:fermium-buster-slim
 LABEL mainteiner = 'Ricardo David Ortiz'
 WORKDIR /strapi
 COPY package*.json ./

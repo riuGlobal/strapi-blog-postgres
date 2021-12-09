@@ -7,6 +7,8 @@ A quick description of your strapi application
 docker build -t strapi .
 docker run -p1337:1337 -d --name=strapi-blog \
 -v${PWD}/strapi-data:/strapi-data \
+-eSERVER_URL=http://localhost:1337/strapi \
+-eADMIN_URL=http://localhost:1337/strapi/admin \
 -eDATABASE_HOST=database-host \
 -eDATABASE_PORT=5432 \
 -eDATABASE_NAME=strapi \

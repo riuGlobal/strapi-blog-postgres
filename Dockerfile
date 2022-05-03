@@ -11,4 +11,4 @@ WORKDIR /strapi-data
 EXPOSE 1337
 CMD bash /strapi/strapi.sh \
   && npm run build \
-  && npm run develop
+  && npm run start
